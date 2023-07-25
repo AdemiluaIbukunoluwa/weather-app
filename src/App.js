@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from "react";
 
 function App() {
+   useEffect(()=>{
+    fetch("https://api.weatherapi.com/v1/forecast.json?key=a70d45887f63445ab57210911232407&q=Lagos&aqi=yes")
+    .then(response => response.json())
+    .then((data) => console.log(data))
+    }, [])
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <button>Show</button>
     </div>
   );
 }
 
-export default App;
+
+export default App
