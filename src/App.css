@@ -6,3 +6,8 @@ body > #root > div {
   height: 100vh;
 }
 
+.background{
+  display: flex;
+  flex-direction: row;
+}
+

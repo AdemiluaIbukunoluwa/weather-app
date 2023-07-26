@@ -1,5 +1,5 @@
-import FullDate from "../date/datedata.component"
-import Time from "../date/timedata.component"
+import FullDate from "../date-and-time/datedata.component"
+import Time from "../date-and-time/timedata.component"
 import "./sidebar.style.scss"
 
 

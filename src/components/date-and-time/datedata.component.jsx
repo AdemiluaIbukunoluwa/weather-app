@@ -7,7 +7,7 @@ const FullDate = () => {
     const month = Months[date.getMonth()]
     const datenum = date.getDate()
     const fullDatestr = `${day}, ${month} ${datenum}, ${date.getFullYear()}`
-    return <p>{fullDatestr}</p>
+    return fullDatestr
 }
 
 export default FullDate

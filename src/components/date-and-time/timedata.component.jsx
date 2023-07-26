@@ -1,3 +1,5 @@
+
+// get time to count 
 const Time = () => {
     const date = new Date()
     let hour = date.getHours()
