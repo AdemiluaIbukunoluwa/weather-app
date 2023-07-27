@@ -7,6 +7,18 @@
     width: 100%;
     background: transparent;
 
-    
+    .weatherText{
+        font-size: 1.5em;
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+
+    .temperature{
+        display: flex;
+    }
+    .temperature p{
+        padding: 3% 5%;
+        font-size: 2.8em;
+    }
 }
 

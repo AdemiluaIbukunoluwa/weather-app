@@ -6,7 +6,7 @@ import MainBody from "./components/mainBody/mainbody.component";
 function App() {
   const [locData, setLocData] = useState([])
   const [weatherData, setWeatherData] = useState([])
-  const [conditionText, setConditionText] = useState('text')
+  const [conditionText, setConditionText] = useState('')
 
 
   useEffect( ()=>{
