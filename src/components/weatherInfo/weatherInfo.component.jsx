@@ -1,12 +1,14 @@
-const WeatherInfo = ({info}) => {
-    const {humidity, wind_degree, wind_dir, pressure_in} = info
-    return(
-        <div className="weatherinfo">
-            <p>Humidity : {humidity}</p>
-            <p>Wind Degree : {wind_degree}</p>
-            <p>wind_dir : {wind_dir}</p>
-            <p>Pressure : {pressure_in}in</p>
-        </div>
-    )
-}
-export default WeatherInfo
+import "./weatherInfo.style.scss";
+
+const WeatherInfo = ({ info }) => {
+  const { humidity, wind_degree, wind_dir, pressure_in } = info;
+  return (
+    <div className="weatherinfo">
+      <div>Humidity : {humidity}</div>
+      <p>Wind Degree : {wind_degree}</p>
+      <p>Wind Direction : {wind_dir}</p>
+      <div>Pressure : {pressure_in}in</div>
+    </div>
+  );
+};
+export default WeatherInfo;

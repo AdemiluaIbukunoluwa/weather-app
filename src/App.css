@@ -2,12 +2,17 @@
   margin: 0;
   padding: 0;
 }
+
 body > #root > div {
   height: 100vh;
+  width: 100%;
 }
 
 .background{
   display: flex;
   flex-direction: row;
+  background : url('./assets/backgroundimage-cloudy.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 

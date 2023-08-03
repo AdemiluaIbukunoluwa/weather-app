@@ -1,24 +1,27 @@
-.last-updated-main-body{
-    font-size: 1em;
-    float: right;
+.last-updated-main-body {
+  font-size: 1em;
+  float: right;
 }
 
-.mainbody{
-    width: 100%;
-    background: transparent;
+.mainbody {
+  width: 100%;
+  background: transparent;
+  .current-weather{
+    margin-top: 10%;
+    .weatherText {
+      font-size: 1.5em;
+      margin-top: 5%;
+      margin-left: 5%;
+    }
+  
+    .temperature {
+      display: flex;
+    }
+    .temperature p {
+      padding: 3% 5%;
+      font-size: 2.8em;
+    }
+  }
 
-    .weatherText{
-        font-size: 1.5em;
-        margin-top: 5%;
-        margin-left: 5%;
-    }
-
-    .temperature{
-        display: flex;
-    }
-    .temperature p{
-        padding: 3% 5%;
-        font-size: 2.8em;
-    }
+  
 }
-
