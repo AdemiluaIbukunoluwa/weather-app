@@ -7,19 +7,30 @@
   width: 100%;
   background: transparent;
   .current-weather{
-    margin-top: 10%;
-    .weatherText {
-      font-size: 1.5em;
-      margin-top: 5%;
-      margin-left: 5%;
-    }
-  
+    margin-top: 7%;
+
     .temperature {
       display: flex;
     }
+    // styling for temperature in celcius
     .temperature p {
-      padding: 3% 5%;
-      font-size: 2.8em;
+      padding: 1% 5%;
+      font-size: 4vw;
+    }
+
+    .weatherTextAndIcon{
+      display: flex;
+      margin-left: 5%;
+
+      .weatherText {
+        font-size: 2.5vw;
+        font-family: 'Edu SA Beginner', cursive;
+      }
+    
+      img{
+        width: 80px;
+        height: 80px;
+      }
     }
   }
 
