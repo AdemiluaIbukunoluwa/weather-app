@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       await fetch(
-        "https://api.weatherapi.com/v1/forecast.json?key=a70d45887f63445ab57210911232407&q=Lagos&aqi=yes"
+        "https://api.weatherapi.com/v1/forecast.json?key=a70d45887f63445ab57210911232407&q=Dundalk&aqi=yes"
       )
         .then((response) => response.json())
         .then((data) => {
