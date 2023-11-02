@@ -8,13 +8,6 @@ body > #root > div {
   width: 100vw;
 }
 
-.background{
-  display: flex;
-  flex-direction: row;
-  background : url('./assets/backgroundimage-cloudy.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 .credit{
   margin-top: 90vh;
