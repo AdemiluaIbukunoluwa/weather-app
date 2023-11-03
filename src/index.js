@@ -5,13 +5,16 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { LocationProvider } from "./context/location.context";
 import { WeatherProvider } from "./context/weather.context";
+import { DateProvider } from "./context/date.context";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <LocationProvider>
       <WeatherProvider>
-        <App />
+        <DateProvider>
+          <App />
+        </DateProvider>
       </WeatherProvider>
     </LocationProvider>
   </React.StrictMode>

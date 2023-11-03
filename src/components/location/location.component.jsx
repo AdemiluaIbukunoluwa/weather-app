@@ -1,5 +1,4 @@
 import { useContext } from "react";
-import { LocationContext } from "../../context/location.context";
 import { WeatherContext } from "../../context/weather.context";
 import './location.styles.scss'
 
@@ -8,11 +7,8 @@ const Location = () => {
   const {name, region, country} = weatherData.location
   // only display this if there is weather data
   return (
-    <div className="location">
-    {
-        console.log(weatherData)
-    }
-      <h1>{name}</h1>
+    <div className="location fixed-bottom py-3">
+      <h4 className="city">{name}</h4>
       <span>{region}, {country}</span>
     </div>
   );

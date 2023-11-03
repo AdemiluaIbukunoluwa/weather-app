@@ -9,10 +9,10 @@ const SideBar = () => {
     const { location } = weatherData;
 
   return (
-    <div className="col-xl-4">
+    <div className="col-xl-3 sidebar px-4">
         <h2 className='title'>SKYWATCH</h2>
-        <DateTime/>
-      <span>{location && <Location />}</span> {/* only display location component if there is location data in weatherData */}
+       <DateTime className='col'/>
+      <span className='col'>{location && <Location />}</span> {/* only display location component if there is location data in weatherData */}
     </div>
   );
 };
