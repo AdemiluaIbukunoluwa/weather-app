@@ -2,8 +2,8 @@ import './mainbody.styles.scss'
 
 const MainBody = () => {
     return(
-        <div className='col-xl-9'>
-        
+        <div className='col-xl-9 mainBody'>
+            <p>Welcome</p>
         </div>
     )
 } 

@@ -5,8 +5,8 @@ import MainBody from "./components/mainBody/mainbody.component";
 function App() {
 
   return (
-    <div className="full-width app row">
-      <div>
+    <div className="app row container-fluid px-0">
+      <div className="row">
         <SideBar/>
         <MainBody/>
       </div>
