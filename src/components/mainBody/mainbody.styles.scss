@@ -1,3 +1,50 @@
-.mainBody{
-    height: 100%;
+.mainBody {
+  height: 100%;
+
+  .weather-condition {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 60px;
+    font-family: Inter;
+    margin-left: 50px;
+  }
+
+  .temp {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    .tempC,
+    .tempF {
+      color: #213363;
+      margin: 0 0 100px 100px;
+      font-size: 3.5em;
+      font-weight: 600;
+    }
+  }
+
+  .otherInfo {
+    width: 500px;
+    height: 250px;
+    flex-shrink: 0;
+    background: rgba(1, 5, 9, 0.72);
+    margin-left: 100px;
+
+    table{
+        padding: 15px;
+        td{
+            color: white;
+            padding: 10px 30px;
+        }
+        td:nth-child(2) {
+            color: white;
+            font-weight: 600;;
+            margin-right: 20px;
+        }
+        td:first-child{
+            font-weight: 200;
+        }
+    }
+
+  }
 }

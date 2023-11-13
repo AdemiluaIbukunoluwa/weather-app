@@ -12,6 +12,23 @@ body > #root > div {
   background-image: url('./assets/background2.jpg');
   background-size: cover;
   margin: 0;
+  font-family: Inter;
 }
 
+.errorpage{
+  justify-content: center;
+  text-align: center;
+  background-color: white;
 
+}
+.errorpage h1{
+    color: red;
+    font-size: 4em;
+    margin-top: 70px;
+}
+
+.lastUpd{
+  text-align: right;
+  position: absolute;
+  color: white;
+}

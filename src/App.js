@@ -1,12 +1,17 @@
 import "./App.css";
 import SideBar from "./components/side-bar/sidebar.component";
 import MainBody from "./components/mainBody/mainbody.component";
+import { useContext } from "react";
+import { WeatherContext } from "./context/weather.context";
 
 function App() {
+  const {weatherData} = useContext(WeatherContext)
 
   return (
+    weatherData.current &&
     <div className="app row container-fluid px-0">
       <div className="row">
+        <span className="lastUpd">Last updated: {weatherData.current.last_updated}</span>
         <SideBar/>
         <MainBody/>
       </div>
