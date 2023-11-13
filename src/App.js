@@ -7,7 +7,8 @@ import { WeatherContext } from "./context/weather.context";
 function App() {
   const {weatherData} = useContext(WeatherContext)
 
-  return (
+   return (
+    document.body.offsetHeight> 1684 & document.body.offsetHeight> 595?
     weatherData.current &&
     <div className="app row container-fluid px-0">
       <div className="row">
@@ -25,8 +26,8 @@ function App() {
           />
         </a>
       </div> */}
-    </div>
-  );
+    </div>: <span>Only available for desktop display</span>
+  )
 }
 
 export default App;
