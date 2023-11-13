@@ -5,18 +5,19 @@ import { useContext } from "react";
 import { WeatherContext } from "./context/weather.context";
 
 function App() {
-  const {weatherData} = useContext(WeatherContext)
+  const { weatherData } = useContext(WeatherContext);
 
-   return (
-    document.body.offsetHeight> 1684 & document.body.offsetHeight> 595?
-    weatherData.current &&
-    <div className="app row container-fluid px-0">
-      <div className="row">
-        <span className="lastUpd">Last updated: {weatherData.current.last_updated}</span>
-        <SideBar/>
-        <MainBody/>
-      </div>
-{/* 
+  return (
+    weatherData.current && (
+      <div className="app row container-fluid px-0">
+        <div className="row">
+          <span className="lastUpd">
+            Last updated: {weatherData.current.last_updated}
+          </span>
+          <SideBar />
+          <MainBody />
+        </div>
+        {/* 
       <div className="credit fixed-bottom float-right">
         <a href="https://www.weatherapi.com/" title="Free Weather API">
           <img
@@ -26,8 +27,9 @@ function App() {
           />
         </a>
       </div> */}
-    </div>: <span>Only available for desktop display</span>
-  )
+      </div>
+    )
+  );
 }
 
 export default App;
