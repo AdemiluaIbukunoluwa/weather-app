@@ -11,3 +11,9 @@
     font-family: Koulen;
 }
 }
+
+@media screen and (max-width: 600px) {
+    .sidebar{
+        width:  auto;
+    }
+}
